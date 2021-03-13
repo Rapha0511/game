@@ -68,6 +68,7 @@ boutonStart.addEventListener('click',function(){
 function saut(){
     if(personnage.classList == "animate"){return}
     personnage.classList.add("animate");
+    personnage.classList.remove("crouch-animation")
     setTimeout(function(){
         personnage.classList.remove("animate");
     },400);
@@ -116,7 +117,7 @@ body.addEventListener("keydown",function(e){
                         conteur = 0;
                 }else{
                     conteur++;
-                    if(conteur > 300){
+                    if(conteur > 1000){
                         blockLevel2.style.animation = "block 1s infinite linear";
                     }
                     document.getElementById("score").innerHTML = conteur;
