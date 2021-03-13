@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>jeu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="accueil">
+        <h1>Choisissez votre personnage et votre stage</h1>
+        <div id="configContainer">
+            <div id="personnageContainer">
+                <div id="character1" class="character"></div>
+                <div id="character2" class="character"></div>
+                <div id="character3" class="character"></div>
+            </div>
+            <div id="stageContainer">
+                <div id="stage1" class="stage"></div>
+                <div id="stage2" class="stage"></div>
+                <div id="stage3" class="stage"></div>
+            </div>
+        </div>
+        <span id="start">Cliquez pour commencer</span>
+    </div>
+
+<div id="jeu" style="display: none;">
+    <p>Score: <span id="score"></span></p>
+    <p>TOP SCORE! <span id="topScore"></span> </p>
+    <div id="cadreJeu">
+        <div id="personnage"></div>
+        <div id="block"></div>
+        <div id="block-lvl2"></div>
+</div>
+
+<div>
+    <p id="fail"></p>
+    <ul id="scoreContainer">
+
+    </ul>
+
+</div>
+
+
+</body>
+<script src="script.js"></script>
+</html>

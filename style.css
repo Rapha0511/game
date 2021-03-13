@@ -1,0 +1,146 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background: linear-gradient(0.45turn, #3f87a6, #ebf8e1, #f69d3c);;
+}
+
+#start{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#accueil{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.characterSelectionne{
+    border: 1px solid red;
+}
+
+.stageSelectionne{
+    border: 1px solid green;
+}
+
+
+#configContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+#stageContainer,#personnageContainer{
+    display: flex;
+}
+
+
+#stage1,#stage2,#stage3,#character1,#character2,#character3{
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+#character1{
+    background-image: url("personnage.png");
+}
+
+#character2{
+    background-image: url("personnage2.png");
+}
+
+#character3{
+    background-image: url("personnage3.png");
+}
+
+
+#stage1{
+    background-image: url("background.jpg");
+}
+
+#stage2{
+    background-image: url("space-bg.jpg");
+}
+
+#stage3{
+    background-image: url("futurist-background.jpg");
+}
+
+
+#cadreJeu{
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+    overflow: hidden;
+    background-image: url("background.jpg") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#personnage{
+    width: 50px;
+    height: 60px;
+    position:relative;
+    top: 140px;
+    background: url('personnage.png') no-repeat center;
+    background-size: contain;    
+}
+.animate{
+    animation: jump 0.3s linear;
+}
+
+.crouch-animation{
+    animation: crouch 0.3s linear;
+}
+
+@keyframes crouch{
+    100%{top:150px}
+    70%{top:160px}
+    40%{top:170px}
+    0%{top:180px}
+}
+
+@keyframes jump{
+    0%{top: 140px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 140px;}
+}
+
+#block{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 112px;
+    left: 500px;
+    background: url("virus.png") no-repeat center;
+    background-size: contain;
+
+}
+
+#block-lvl2{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 45px;
+    left: 500px;
+    background: url("chauve-souris.png") no-repeat center;
+    background-size: contain;
+}
+
+@keyframes block{
+    0%{left: 500px}
+    100%{left: -15px}
+}
+p{
+    text-align: center;
+}
