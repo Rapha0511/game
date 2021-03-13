@@ -95,17 +95,17 @@ body{
     background-size: contain;    
 }
 .animate{
-    animation: jump 0.3s linear;
+    animation: jump 400ms linear;
 }
 
 .crouch-animation{
-    animation: crouch 0.3s linear;
+    animation: crouch 400ms linear;
 }
 
 @keyframes crouch{
     100%{top:150px}
     70%{top:160px}
-    40%{top:170px}
+    30%{top:180px}
     0%{top:180px}
 }
 
@@ -141,7 +141,7 @@ body{
 
 @keyframes block{
     0%{left: 500px}
-    100%{left: -10px;}
+    100%{left: -1px;}
 }
 
 p{

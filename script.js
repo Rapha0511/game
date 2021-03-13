@@ -88,7 +88,7 @@ body.addEventListener("keydown",function(e){
         if(e.code == 'Space'){
             saut();
             if(!checkDead){
-                block.style.animation = "block 1s infinite linear";
+                block.style.animation = "block 1.7s infinite linear";
                 checkDead = window.setInterval(function() {
                     let characterTop = parseInt(window.getComputedStyle(personnage).getPropertyValue("top"));
                     let blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
@@ -118,7 +118,7 @@ body.addEventListener("keydown",function(e){
                 }else{
                     conteur++;
                     if(conteur > 200 && blockLeft < 220){
-                        blockLevel2.style.animation = "block 1s infinite linear";
+                        blockLevel2.style.animation = "block 1.7s infinite linear";
                     }
                     document.getElementById("score").innerHTML = conteur;
             
