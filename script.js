@@ -71,7 +71,7 @@ function saut(){
     personnage.classList.remove("crouch-animation")
     setTimeout(function(){
         personnage.classList.remove("animate");
-    },400);
+    },300);
 
 }
 
@@ -80,7 +80,7 @@ function crouch(){
     personnage.classList.add("crouch-animation");
     setTimeout(function(){
         personnage.classList.remove("crouch-animation");
-    },400)
+    },300)
 }
 
 body.addEventListener("keydown",function(e){
@@ -117,7 +117,7 @@ body.addEventListener("keydown",function(e){
                         conteur = 0;
                 }else{
                     conteur++;
-                    if(conteur > 200 && blockLeft < 200){
+                    if(conteur > 200 && blockLeft < 220){
                         blockLevel2.style.animation = "block 1s infinite linear";
                     }
                     document.getElementById("score").innerHTML = conteur;
