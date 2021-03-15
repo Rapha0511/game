@@ -6,16 +6,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div id="accueil">
+    <div id="home">
         <h1>Choisissez votre personnage et votre stage</h1>
         <div id="configContainer">
-            <div id="personnageContainer">
+            <div id="charactersContainer">
                 <div id="character1" class="character"></div>
                 <div id="character2" class="character"></div>
                 <div id="character3" class="character"></div>
             </div>
-            <div id="stageContainer">
+            <div id="stagesContainer">
                 <div id="stage1" class="stage"></div>
                 <div id="stage2" class="stage"></div>
                 <div id="stage3" class="stage"></div>
@@ -25,16 +24,17 @@
     </div>
 
 <div id="jeu" style="display: none;">
+    <span id="backToHome">Retours</span>
     <p>Score: <span id="score"></span></p>
     <p>TOP SCORE! <span id="topScore"></span> </p>
-    <div id="cadreJeu">
-        <div id="personnage"></div>
+    <div id="gameContainer">
+        <div id="character"></div>
         <div id="block"></div>
         <div id="block-lvl2"></div>
 </div>
-
-<div>
     <p id="fail"></p>
+<div id="lastScore">
+    <p>Vos derniers scores</p>
     <ul id="scoreContainer">
 
     </ul>

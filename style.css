@@ -1,18 +1,19 @@
 body{
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
+    overflow: hidden;
+    height: 100vh;
     background: linear-gradient(0.45turn, #3f87a6, #ebf8e1, #f69d3c);;
 }
 
-#start{
+#start,#backToHome{
     border: 1px solid black;
     border-radius: 5px;
     padding: 5px;
     cursor: pointer;
 }
 
-#accueil{
+#home{
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -34,7 +35,7 @@ body{
     flex-direction: column;
 }
 
-#stageContainer,#personnageContainer{
+#stagesContainer,#charactersContainer{
     display: flex;
 }
 
@@ -75,7 +76,7 @@ body{
 }
 
 
-#cadreJeu{
+#gameContainer{
     width: 500px;
     height: 200px;
     border: 1px solid black;
@@ -86,7 +87,7 @@ body{
     background-position: center;
     background-size: cover;
 }
-#personnage{
+#character{
     width: 50px;
     height: 60px;
     position:relative;
@@ -95,21 +96,21 @@ body{
     background-size: contain;    
 }
 .animate{
-    animation: jump 400ms linear;
+    animation: jump-animation 400ms linear;
 }
 
 .crouch-animation{
-    animation: crouch 400ms linear;
+    animation: crouch-animation 400ms linear;
 }
 
-@keyframes crouch{
+@keyframes crouch-animation{
     100%{top:150px}
     70%{top:160px}
     30%{top:180px}
     0%{top:180px}
 }
 
-@keyframes jump{
+@keyframes jump-animation{
     0%{top: 140px;}
     30%{top: 100px;}
     70%{top: 100px;}
@@ -146,4 +147,11 @@ body{
 
 p{
     text-align: center;
+}
+
+#scoreContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
